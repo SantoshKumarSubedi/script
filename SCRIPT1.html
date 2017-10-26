@@ -1,0 +1,15 @@
+<HTML>
+<BODY>
+<p> the local variable carname cannot be accessed from code outside the function:</P>
+  <p id="id"></p>
+  <button onmouseover="myfuction()"> button</button>
+  <script>
+    var carname="Volvo";
+
+
+  function myfuction(){
+  document.getElementById('id').innerHTML="the type of carname is "+ carname;
+  }
+  </script>
+</body>
+</html>

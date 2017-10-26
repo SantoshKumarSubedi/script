@@ -1,0 +1,35 @@
+<html>
+<body>
+  <h2> JavaScript String Method</h2>
+
+  <p id="demo"></p>
+  <p id="id0"></p>
+  <p id="id1"></p>
+  <p id="id2"></p>
+  <p id="id3"></p>
+  <p id="id4"></p>
+  <p id="id5"></p>
+    <script>
+      var str="please locate where 'locate' occurs! locate";
+      var pos=str.indexOf("locate");
+      var res=str.slice(7,15);
+      var neg=str.slice(-10,-5);
+      var sub=str.substr(7,10);
+      var rep=str.replace(/locate/g,"santos");
+      var name="a,b,v,c,d,e,t,c,s,g,s,h,r,";
+      var arr=name.split(",");
+      var cha=str.charAt(20);
+      document.getElementById("demo").innerHTML="Index of loacat:"+pos;
+      document.getElementById("id0").innerHTML ="slice a string using negative parameter:"+neg;
+      document.getElementById("id1").innerHTML = "slice a string using positive parameter:"+res;
+      document.getElementById("id2").innerHTML= "slicing a string from index of first parameter to the number of </br> character of secont parameter:"+sub;
+      document.getElementById("id3").innerHTML="replace a cretain word from a string:"+rep;
+      document.getElementById("id4").innerHTML="using string by transforming it ro an array:"+arr[6];
+      document.getElementById("id5").innerHTML="seperating a character from a string:"+cha;
+//using string as an array is unsafe
+//it doesn't show error but it may not work
+//string and string objects are not same
+
+    </script>
+  </body>
+  </html>
