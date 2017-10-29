@@ -6,8 +6,19 @@
   <p id="id2"></p>
   <p id="id3"></p>
   <p id="id4"></p>
+  <p id="id5"></p>
+  <p id='id6'></p>
+  <p id='id7'></p>
+  <p id='id8'></p>
+  <p id='id9'></p>
+  <p id='id10'></p>
+  <p id='id11'></p>
+  <p id='id12'></p>
 <script>
 var mobile=["mi",'nokia','lava','iphone','samsung','oppo'];
+var pc=["dell","lenovo","hp"];
+var num=[1,5,9,71,25,36,45,85,22,14];
+var mix=mobile.concat(pc);
 document.getElementById('id0').innerHTML=mobile.join(" ");
 mobile.pop();
 document.getElementById('id1').innerHTML=mobile;
@@ -17,6 +28,21 @@ mobile.shift();
 document.getElementById('id3').innerHTML=mobile;
 mobile.unshift("moto");
 document.getElementById('id4').innerHTML=mobile;
+mobile.splice(3,0,"mi","oppo");
+document.getElementById('id5').innerHTML=mobile;
+document.getElementById('id6').innerHTML=mix;
+document.getElementById('id7').innerHTML=mix.slice(3,7);
+document.getElementById('id8').innerHTML=mobile.sort();
+document.getElementById('id9').innerHTML=num;
+document.getElementById('id10').innerHTML=num.sort(function(a,b){return a-b});
+document.getElementById('id11').innerHTML=Math.max.apply(null,num);
+document.getElementById('id12').innerHTML=Math.min.apply(null,num);
+
+
+
+
+
+
 </script>
 </body>
 </html>
