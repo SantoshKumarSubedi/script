@@ -1,0 +1,35 @@
+body{
+  background-color: #e9e9e9;
+}
+#main-div{
+  display: flex;
+
+}
+#main-div-first{
+flex: 1;
+height: 200px;
+background: red;
+}
+
+#main-div-second{
+flex: 1;
+height: 200px;
+background: black;
+
+}
+#div-first-first{
+ height: 20px;
+ width: 0%;
+ background: green;
+
+animation-fill-mode: forwards;
+}
+
+@keyframes wid {
+from{width: 0%}
+to{width: 100%}
+}
+@keyframes hig {
+  from{height:20px}
+  to{height: 200px}
+}
